@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Shape Up Or Shape Out</title>
+</head>
+
+<body>
+        <h1 class ='title'>Shape Up Or Shape Out</h1>
+    <div class="container">
+        
+        <div class="paint col">
+            <!--Start Rectangle Section -->
+            <h1>Rectangle</h1>
+            <hr>
+            <input type="text" id ="r-width" name = "r-width" placeholder="Width:">
+            <input type="text" id ="r-height" name = "r-height" placeholder="Height:">
+            <button class="rectangle-submit" type="submit" id ="rec-ins">Insert</button>
+
+            <!--Start Circle Section -->
+            <h1>Circle</h1>
+            <hr>
+            <input type="text" id ="c-radius" name = "c-radius" placeholder="Radius:">
+            <button class="circle-submit" type="submit" id ="cir-ins">Insert</button>
+
+            <!--Start Circle Section -->
+            <h1>Square</h1>
+            <hr>
+            <input type="text" id ="s-length" name = "s-length" placeholder="Side Width:">
+            <button class="square-submit" type="submit" id ="sq-ins">Insert</button>
+
+            <!--Start Circle Section -->
+            <h1>Right Triangle</h1>
+            <hr>
+            <input type="text" id ="t-height" name = "t-height" placeholder="Height:">
+            <button class="triangle-submit" type="submit" id ="tri-ins">Insert</button>
+
+        </div>
+        <div class="art-board col" id ="art-board">
+        </div>
+        <div class="stats col" id = "stats">
+            <div class = "name">
+                <h2>Shape Name:</h2>
+                <div class="shape-stat" id="shape-stat"></div>
+            </div>
+            <div class = "width">
+                <h2>Width:</h2>
+                <div class="width-stat" id ="width-stat"></div>
+            </div>
+            <div class = "height">
+                <h2>Height:</h2>
+                <div class="height-stat" id = "height-stat"></div>
+            </div>
+            <div class = "radius">
+                <h2>Radius:</h2>
+                <div class="radius-stat" id = "radius-stat"></div>
+            </div>
+            <div class = "area">
+                <h2>Area:</h2>
+                <div class="area-stat" id = "area-stat"></div>
+            </div>
+            <div class = "perimeter">
+                <h2>Perimeter:</h2>
+                <div class="perimeter-stat" id = "perimeter-stat"></div>
+            </div>
+        </div>
+    </div>
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background-color: #2d3436;
+}
+
+.title {
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: .5em;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.paint {
+    background-color: #00b894;
+    height: 600px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: right;
+    flex-wrap: wrap;
+    padding: 1em;
+}
+
+h1 {
+    font-size: 2em;
+    color: #fff;
+    padding-top: .5em;
+}
+
+hr {
+    width: 100%;
+    background-color: #2d3436;
+    height: 1px;
+    border: none;
+    margin: 10px 0;
+}
+.col {
+    display: inline-block;
+}
+
+.art-board {
+    height: 600px;
+    width: 600px;
+    background-color: #ccc;
+    padding: 0;
+    margin: 1em;
+    position: relative;
+    
+}
+
+.stats {
+    background-color: #00b894;
+    height: 600px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    padding: 1em;
+    flex-wrap: wrap;
+}
+
+#r-width, #r-height , #s-length,
+#c-radius, #t-height{
+    width: 30%;
+    padding: 10px;
+    border: none;
+    margin: 5px;
+    font-size: 15px;
+    color: #999;
+}
+
+.rectangle-submit, .square-submit , .circle-submit, .triangle-submit{
+    margin: 5px;
+    padding: 10px 20px;
+    background-color:#2d3436;
+    border: none;
+    color: #fff;    
+    font-size: 15px;
+    cursor: pointer;
+}
+
+::placeholder {
+    color: #b2bec3;
+}
+
+.name,.width, .height, .radius, .perimeter, .area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    width: 100%;
+    padding-top: .5em;
+}
+
+.name {
+    padding-top: 0;
+}
+
+.shape-stat, .width-stat, .height-stat, 
+.radius-stat, .perimeter-stat, .area-stat {
+    background-color: #2d3436;
+    color: white;
+    height: 40px;
+    width: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1em;
+
+}
+
+h2 {
+    color: white;
+}
+
+.shape {
+    position: absolute;
+}
+
+.Rectangle {
+    background-color: rgba(0, 184, 148, 0.5);
+}
+
+.Circle {
+    background-color: rgba(108, 92, 231, 0.5);
+    border-radius: 50%;
+}
+
+.Triangle {
+    width: 0;
+    height: 0;
+}
+
+.Square {
+    background-color: rgba(214, 48, 49, 0.5);
+}
